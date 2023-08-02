@@ -1,0 +1,37 @@
+.sj-header {
+    position: relative;
+    &__principal {
+        display: flex;
+        background-color: rgb(255, 255, 255);
+        height: 100px;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5%;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: row;
+        height: 90%;
+        width: max-content;
+        align-items: center;
+        gap: 1em;
+    }
+
+    &__logo {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+
+}
+
+@media (min-width: 768px) {
+    .sj-header {
+        &__left {
+            height: 85%;
+            gap: 1.2em;
+        }
+    }
+}
