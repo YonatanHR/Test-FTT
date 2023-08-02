@@ -1,4 +1,14 @@
-.contenedor-catalogo{
+.contenedor-catalogo {
     margin: 0 auto;
     width: 80%;
+}
+
+.elevate-on-hover {
+    transition: transform 0.3s ease;
+    /* Agrega una transición de 0.3 segundos para la propiedad transform */
+}
+
+.elevate-on-hover:hover {
+    transform: translateY(-5px);
+    /* Al pasar el cursor sobre la imagen, eleva 5px hacia arriba */
 }

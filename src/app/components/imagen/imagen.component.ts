@@ -38,7 +38,6 @@ export class ImagenComponent implements OnInit {
     });
   }
 
-
   //Consulta la imagen con el id que devuelve la ruta
   consultaById(id: number){
     this.apiService.consultaFotosById(id)
@@ -57,6 +56,7 @@ export class ImagenComponent implements OnInit {
 
   //Te devuelve a la página de catálogos
   regresar(){
+    this.compartidoService.isMostrarHeader = true;
     this.router.navigate(["/catalogo"]);
   }
 

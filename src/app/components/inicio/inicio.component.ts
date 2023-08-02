@@ -20,9 +20,9 @@ export class InicioComponent implements OnInit{
     this.compartidoService.isMostrarHeader = false;
   }
 
-
   //Te redirige a la pantalla de catálogo
   irCatalogo(){
+    this.compartidoService.isMostrarHeader = true;
     this.router.navigate(['/catalogo']);
   }
 

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { DataViewLayoutOptions } from 'primeng/dataview';
 import { ResponseAllPhotos } from 'src/app/interfaces/request.interface';
 import { ApiService } from 'src/app/services/api.service';
 import { CompartidoService } from 'src/app/services/compartido.service';
@@ -35,8 +34,10 @@ export class CatalogoComponent implements OnInit{
       });
   }
 
+
   //Recupera el id de la imagen seleccionada para mandarla con paramétro en URL y redirigir a la página de "imagen"
   verItem(id: number){
+    this.compartidoService.isMostrarHeader = true;
     this.router.navigate(["/imagen", id]);
   }
 
